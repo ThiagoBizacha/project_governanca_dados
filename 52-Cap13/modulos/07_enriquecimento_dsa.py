@@ -26,7 +26,7 @@ df.to_csv('arquivos/dados_enriquecidos.csv', index=False)
 
 # Enviar para o S3
 s3 = boto3.client('s3')
-bucket_name = 'dsa-data-lake-p6-890582101704'
+bucket_name = 'dsa-data-lake-p6-390438668051'
 s3.upload_file('arquivos/dados_enriquecidos.csv', bucket_name, 'enriched-data/dados_enriquecidos.csv')
 
 print("\nDSA Log - Enriquecimento concluído e dados enriquecidos enviados para o Data Lake.\n")

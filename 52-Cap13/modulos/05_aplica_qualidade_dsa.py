@@ -32,7 +32,7 @@ df.to_csv('arquivos/dados_limpos.csv', index=False)
 
 # Enviar para o S3
 s3 = boto3.client('s3')
-bucket_name = 'dsa-data-lake-p6-890582101704'
+bucket_name = 'dsa-data-lake-p6-390438668051'
 s3.upload_file('arquivos/dados_limpos.csv', bucket_name, 'processed-data/dados_limpos.csv')
 
 print("\nDSA Log - Validação de qualidade concluída e dados limpos enviados para o Data Lake.\n")
