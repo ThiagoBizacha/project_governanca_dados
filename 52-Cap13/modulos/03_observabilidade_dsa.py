@@ -47,7 +47,7 @@ with open('arquivos/observabilidade.json', 'w') as f:
 
 # Envia para o S3
 s3 = boto3.client('s3')
-bucket_name = 'dsa-data-lake-p6-890582101704'
+bucket_name = 'dsa-data-lake-p6-390438668051'
 s3.upload_file('arquivos/observabilidade.json', bucket_name, 'observabilidade/observabilidade_inicial.json')
 
 print("\nDSA Log - Arquivo de observabilidade dos dados enviado para o Data Lake.\n")
