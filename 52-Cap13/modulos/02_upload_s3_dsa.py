@@ -9,7 +9,7 @@ s3 = boto3.client('s3')
 region = 'us-east-2'  
 
 # Variáveis
-bucket_name = 'dsa-data-lake-p6-890582101704'
+bucket_name = 'dsa-data-lake-p6-390438668051'
 file_name = 'arquivos/dados_brutos.csv'
 object_name = 'raw-data/dados_brutos.csv'
 
